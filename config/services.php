@@ -35,8 +35,14 @@ return [
         ],
     ],
 
-    'dolarapi' => [ 
+    'dolarapi' => [
         'url' => env('DOLAR_API_BASE_URL', 'https://dolarapi.com/v1/dolares'),
+    ],
+
+    'exchange_rate' => [
+        'url' => env('EXCHANGE_RATE_API_URL', 'https://api.exchangerate-api.com/v4'),
+        'key' => env('EXCHANGE_RATE_API_KEY'),
+        'cache_ttl' => env('EXCHANGE_RATE_CACHE_TTL', 10), // minutes
     ],
 
 ];
